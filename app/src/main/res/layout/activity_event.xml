@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#880808"
+    tools:context=".EventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#880808"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sjam_logo"/>
+
+        <TextView
+            android:text="Event"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="~You Can Save A Life~"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/activity_display"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/blood_donation_poster"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="World Blood Donor Day"
+            android:layout_below="@+id/item_display"
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_time_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="10am~10am"
+            android:textSize="16dp"
+            android:textColorHint="#fff"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_date_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="14 June 2023"
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_location_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="Aeon Terbau, Johor"
+            android:textSize="16dp"
+            android:textColorHint="#fff"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_description_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="The event serves to raise awareness of the need for safe blood and blood products and to thank voluntary, unpaid blood donors for their life-saving gifts of blood."
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/activity_display2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/poster2"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Name:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_name2_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="World Blood Donor Day ~ Kulai"
+            android:layout_below="@+id/item_display"
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_time2_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="10am~10am"
+            android:textSize="16dp"
+            android:textColorHint="#fff"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_date2_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="14 June 2023"
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/location2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_location2_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="Aeon Kulai, Johor"
+            android:textSize="16dp"
+            android:textColorHint="#fff"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/activity_description2_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_display"
+            android:hint="The event serves to raise awareness of the need for safe blood and blood products and to thank voluntary, unpaid blood donors for their life-saving gifts of blood."
+            android:textColorHint="#fff"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

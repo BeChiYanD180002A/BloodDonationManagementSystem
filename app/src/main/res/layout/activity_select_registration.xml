@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#880808"
+    tools:context=".SelectRegistrationActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/sjam_logo"/>
+
+    <TextView
+        android:text="St.John and Blood Donation Management System"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Please select the type of registration"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/userRegistrationButton"
+        android:text="User Registration"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/adminRegistrationButton"
+        android:text="Admin Registration"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/signInButton"
+        android:text="Already registered a account? Sign in here."
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

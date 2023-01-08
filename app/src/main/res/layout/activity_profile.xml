@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#880808"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#880808"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+    <!--
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:elevation="10dp"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/sjam_logo"/>
+    -->
+
+    <TextView
+        android:text="Profile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--
+    <ImageView
+        android:id="@+id/a_profile_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"/>
+        -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/img"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/black"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:maxLines="1"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:drawablePadding="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:drawableStart="@drawable/ic_person"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/bloodTypeList"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/bloodType"
+            ></Spinner>
+
+        <EditText
+            android:id="@+id/userAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_time"/>
+
+        <EditText
+            android:id="@+id/userGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_people"/>
+
+        <EditText
+            android:id="@+id/userWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_weight"/>
+
+        <EditText
+            android:id="@+id/userICno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IC Number"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_weight"/>
+
+        <EditText
+        android:id="@+id/userPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:drawablePadding="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:drawableStart="@drawable/ic_phone"/>
+
+        <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawablePadding="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:drawableStart="@drawable/ic_email"/>
+
+        <EditText
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textLongMessage"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_baseline_home_24"/>
+
+        <EditText
+            android:id="@+id/userEthnicity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ethnicity"
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textColorHint="#fff"
+            android:drawableStart="@drawable/ic_location_city"/>
+
+        <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#fff"
+        android:drawableStart="@drawable/ic_lock"/>
+
+    <Button
+        android:id="@+id/editButton"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/saveButton"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</ScrollView>
