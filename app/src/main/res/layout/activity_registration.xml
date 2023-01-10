@@ -59,17 +59,17 @@
             android:textColorHint="#fff"
             android:drawableStart="@drawable/ic_email"/>
 
-        <EditText
-            android:id="@+id/password"
+        <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:drawablePadding="10dp"
-            android:textColor="#fff"
-            android:textSize="18sp"
-            android:textColorHint="#fff"
-            android:drawableStart="@drawable/ic_lock"/>
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/typeList"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/type"
+            ></Spinner>
 
         <Button
             android:id="@+id/submitButton"
