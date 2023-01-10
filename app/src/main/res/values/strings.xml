@@ -14,6 +14,14 @@
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
 
+    <string-array name="type">
+
+        <item>Please select your identity:</item>
+        <item>Volunteer</item>
+        <item>Member of St. John</item>
+
+    </string-array>
+
     <string-array name="bloodType">
 
         <item>Please select your blood type:</item>
